@@ -1,0 +1,59 @@
+.root{
+    -fx-background-color:#40c4ff;
+}
+
+.button{
+    -fx-background-color: #455a64;
+    -fx-border-color: transparent;
+    -fx-font-size: 15px;
+    -fx-padding: 0px;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-float:right;
+    -fx-cursor: hand;
+    -fx-height:30px;
+    -fx-width:30px;
+}
+
+.button:hover{
+    -fx-background-color: #7491b4;
+
+}
+.button:focused{
+    -fx-background-color: #7491b4;
+}
+
+.text-field{
+    -fx-border-width: 0.7px;
+    -fx-border-color: #D7D7D7;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-text-fill: black;
+    -fx-font-size: 15px;
+    -fx-padding: 5px 35px 5px 15px;
+    -fx-background-color: white;
+}
+.combo-box{
+    -fx-border-width: 0.5px;
+    -fx-border-color: #ACACAC;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-background-color: white;
+    -fx-font-size: 15px;
+    -fx-padding: 0px;
+    -fx-font-weight:700;
+    -fx-font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+.combo-box:hover{
+    -fx-text-fill: white;
+}
+.combo-box:checked{
+
+}
+.combo-box-base:hover{
+    -fx-border-color: green;
+}
+.combo-box-base:focused{
+    /*    -fx-background-color: #EA5444;*/
+    -fx-text-fill: white;
+}

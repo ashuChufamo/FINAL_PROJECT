@@ -1,0 +1,21 @@
+VBox{
+  -fx-background-color:#263238;
+
+}
+.button{
+    -fx-background-color:transparent;
+    -fx-border-width: 0px 0px 0px 5px;
+    -fx-border-color:#5d4037;
+    -fx-border-radius:none;
+    -fx-text-fill:#edeff1;
+    -fx-font-size:15px;
+}
+
+.button:hover{
+     -fx-background-color:#FF4E3C;
+     -fx-border-color:#ffcc80;
+}
+#logout{
+    -fx-background-color:#263238;
+    -fx-border-width:none;
+}

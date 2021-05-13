@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.userControll">
+   <top>
+      <HBox spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#back" text="back" />
+            <Label text="Label" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <center>
+      <GridPane hgap="10.0" vgap="10.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="105.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="141.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="254.0" minWidth="10.0" prefWidth="103.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="237.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="supplier name" GridPane.hgrow="ALWAYS" />
+            <Label text="contact number" GridPane.rowIndex="1" />
+            <Label text="Address" GridPane.rowIndex="2" />
+            <Label text="Added by" GridPane.columnIndex="2" />
+            <Label text="date" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label text="description" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="supplier_name" GridPane.columnIndex="1" />
+            <TextField fx:id="supplier_number" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="supplier_Address" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="supplier_addedby" GridPane.columnIndex="3" />
+            <TextArea fx:id="supplier_description" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#supplierclass" text="submit" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <DatePicker fx:id="supplier_date" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" minHeight="455.13885498046875" prefHeight="687.1388549804688" prefWidth="1256.851806640625" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.login_controller">
+  <children>
+    <ImageView fitHeight="688.1388549804688" fitWidth="1256.851806640625" layoutX="0.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@../img/photo-1483736762161-1d107f3c78e1.jpeg" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="titlename" fitHeight="204.0" fitWidth="1260.851806640625" layoutX="-4.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@../img/aait.png" />
+      </image>
+    </ImageView>
+    <Label fx:id="copyright" layoutX="218.0" layoutY="607.0" text="Copyright © 2019 All right Reserved" textFill="#fff500" />
+    <MenuButton id="titleName" fx:id="help" layoutX="50.0" layoutY="204.0" mnemonicParsing="false" popupSide="TOP" prefWidth="77.0" rotate="0.0" text="help" textFill="BLACK">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Action 1" />
+        <MenuItem mnemonicParsing="false" text="Action 2" />
+      </items>
+    </MenuButton>
+    <Button fx:id="aboutus" layoutX="139.0" layoutY="204.0" mnemonicParsing="false" text="About us" />
+    <ImageView fx:id="moto" fitHeight="20.799899237063073" fitWidth="311.99849999998287" layoutX="773.0" layoutY="613.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../img/Untitled.png" />
+      </image>
+    </ImageView>
+    <Button fx:id="ucl" layoutX="526.0" layoutY="204.0" minWidth="23.0" mnemonicParsing="false" prefWidth="23.0001220703125" styleClass="text-field" text="X" />
+    <Button fx:id="pcl" layoutX="526.0" layoutY="253.0" minWidth="23.0" mnemonicParsing="false" prefWidth="23.0" text="X">
+      <stylesheets>
+        <URL value="@login.css" />
+      </stylesheets>
+    </Button>
+    <AnchorPane layoutY="253.0" prefHeight="320.0" prefWidth="311.99853515625" stylesheets="@../cssStyle/login.css" AnchorPane.leftAnchor="429.0" AnchorPane.rightAnchor="429.0">
+      <children>
+        <Label fx:id="status" layoutX="14.0" layoutY="29.0" prefHeight="32.0" prefWidth="53.0" text="" textFill="RED" />
+        <TextField fx:id="U_N" layoutX="109.0" layoutY="73.0" prefWidth="200.0" promptText="User name" />
+        <PasswordField fx:id="p" layoutX="109.0" layoutY="123.0" prefWidth="200.0" promptText="Password" />
+        <Button fx:id="login" layoutX="183.0" layoutY="178.0" mnemonicParsing="false" onAction="#login" text="Log in" />
+        <Hyperlink layoutX="152.0" layoutY="235.0" prefHeight="27.0" prefWidth="115.0" text="Forgot Passsword?" textFill="#33e7ff" />
+      </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@../cssStyle/login.css" />
+  </stylesheets>
+</AnchorPane>

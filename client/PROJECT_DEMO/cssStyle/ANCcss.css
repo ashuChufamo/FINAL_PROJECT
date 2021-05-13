@@ -1,0 +1,12 @@
+AnchorPane{
+    -fx-background-color:white;
+}
+HBox{
+-fx-background-color:#1e88e5 ;
+}
+#hh{
+-fx-background-color:none;
+}
+StackPane{
+-fx-background-color:none;
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="640.0" stylesheets="@cssStyle/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Req_item_Approve_controll">
+   <center>
+      <GridPane prefHeight="514.0" prefWidth="627.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="315.0" minWidth="10.0" prefWidth="309.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="339.0" minWidth="10.0" prefWidth="63.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="339.0" minWidth="10.0" prefWidth="306.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="itemName" GridPane.rowIndex="2" />
+            <TextField fx:id="ItemQuantity" GridPane.rowIndex="8" />
+            <TextField fx:id="ItemRequested_by" GridPane.rowIndex="10" />
+            <TextField fx:id="Item_Approved_By" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <TextField fx:id="ItemApproved" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <DatePicker fx:id="Item_req_date" prefHeight="25.0" prefWidth="300.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label prefHeight="17.0" prefWidth="196.0" text="Item Name:" GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="153.0" text="Item Category:" GridPane.rowIndex="3" />
+            <Label prefHeight="17.0" prefWidth="108.0" text="Item Category:" GridPane.rowIndex="3" />
+            <Label prefHeight="17.0" prefWidth="202.0" text="Quantity:" GridPane.rowIndex="7" />
+            <Label prefHeight="17.0" prefWidth="135.0" text="Requested By:" GridPane.rowIndex="9" />
+            <Label prefHeight="17.0" prefWidth="178.0" text="Req. Date:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="119.0" text="Approved Date:" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label prefHeight="17.0" prefWidth="137.0" text="Approved By:" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="203.0" text="Requested Item" GridPane.columnIndex="1" />
+            <Label text="Brand:" GridPane.rowIndex="5" />
+            <ComboBox fx:id="ItemBrand" prefHeight="25.0" prefWidth="297.0" GridPane.rowIndex="6" />
+            <DatePicker fx:id="ItemApprovedDate" prefHeight="25.0" prefWidth="288.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <ComboBox fx:id="ItemCategory" prefHeight="25.0" prefWidth="287.0" GridPane.rowIndex="4" />
+            <Label prefHeight="17.0" prefWidth="112.0" text="Approve:" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="161.0" text="Submit" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+         </children>
+         <BorderPane.margin>
+            <Insets left="15.0" right="15.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+</BorderPane>

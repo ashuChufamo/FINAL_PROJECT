@@ -1,0 +1,49 @@
+AnchorPane{
+     -fx-background-color:#263238;
+}
+.text-field{
+      -fx-background-color:transparent;
+      -fx-border-color: red;
+      -fx-border-width:1px 1px 3px 1px;
+      -fx-margin:5px 0px 0px 0px;
+      -fx-text-fill: white;
+      -fx-font-size: 15px;
+
+}
+.button{
+ -fx-background-color:#2ca59e;
+}
+.button:hover{
+      -fx-background-color:white;
+}
+.text-field:focused{
+    -fx-border-color: #28de8f;
+
+    }
+
+
+#ucl {
+   -fx-background-color:transparent;
+   -fx-text-fill:none;
+       -fx-text-fill:#d500f9;
+       -fx-font-size:15px;
+
+}
+#ucl:hover {
+      -fx-background-color:white;
+       -fx-text-fill:red;
+
+
+}
+#pcl{
+-fx-background-color:transparent;
+   -fx-text-fill:none;
+       -fx-text-fill:#d500f9;
+       -fx-font-size:15px;
+}
+#pcl:hover {
+      -fx-background-color:white;
+       -fx-text-fill:red;
+
+}
+
